@@ -1,5 +1,22 @@
+import styled from 'styled-components'
+
+const Father = styled.div`
+  display: flex;
+`
+
+const Input = styled.input.attrs({ require: true, minLength: 10 })`
+  background-color: toamto;
+`
+
 function App() {
-  return <h1>App</h1>
+  return (
+    <Father as="header">
+      <Input />
+      <Input />
+      <Input />
+      <Input />
+    </Father>
+  )
 }
 
 export default App
